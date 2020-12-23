@@ -1,0 +1,62 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.home1 {
+    color: black;
+}
+
+.logo {
+    margin-left: 80px;
+}
+
+.navright {
+    margin-right: -130px;
+}
+
+.abc {
+    position: relative;
+}
+
+.abc:hover {
+    color: rgb(243, 106, 106);
+}
+
+.abcd:hover {
+    color: rgb(243, 106, 106);
+}
+
+.abc::before {
+    content: "[";
+    position: absolute;
+    height: 24px;
+    bottom: 9px;
+    margin-left: 8px;
+    transition: .4S;
+    opacity: 0;
+    font-size: 22px;
+    color: rgb(243, 106, 106);
+}
+
+.abc:hover::before {
+    margin-left: -12px;
+    opacity: 1;
+}
+
+.abc::after {
+    content: "]";
+    position: absolute;
+    height: 24px;
+    bottom: 9px;
+    margin-left: -8px;
+    transition: .4S;
+    opacity: 0;
+    color: rgb(243, 106, 106);
+    font-size: 22px;
+}
+
+.abc:hover::after {
+    margin-left: 12px;
+    opacity: 1;
+}
